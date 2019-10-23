@@ -26,6 +26,7 @@ public class ConsumerController {
 
   @RequestMapping(value = "/hello", method = RequestMethod.POST)
   public String hello(@RequestParam String name) {
+    //TODO 明天继续
     return providerService.hello(name) + "!!consumer port is:" + port;
   }
 }
